@@ -59,3 +59,24 @@ This system consists of:
 4. A Claude command interface for sending commands to the tmux session
 
 The web interface will automatically create a tmux session when started, making it easy to connect from your local terminal.
+## Auto-Command System
+
+For completely automated command execution without confirmation:
+
+1. Start the auto-command monitor:
+   ```
+   ./auto_command.sh &
+   ```
+
+2. Claude will write commands to `next_command.txt`
+
+3. Commands are automatically executed in the tmux session
+
+4. This eliminates the need for confirmation on each command
+
+5. To stop the auto-command system:
+   ```
+   pkill -f auto_command.sh
+   ```
+
+This provides the most seamless experience for terminal interaction between Claude and the user.

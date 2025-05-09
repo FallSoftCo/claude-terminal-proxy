@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Terminal</title>
+    <link rel="stylesheet" href="css/xterm.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Claude Terminal Proxy</h2>
+        <div id="terminal-container"></div>
+        <div class="info">
+            <p>Terminal ID: <span id="terminal-id">Not connected</span></p>
+            <p>To connect with tmux: <code>tmux -S /tmp/claude-tmux-socket new-session -A -s claude</code></p>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/xterm.js"></script>
+    <script src="js/xterm-addon-fit.js"></script>
+    <script src="js/client.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+ENV/
+
+# Logs
+logs
+*.log
+command_api_server.log
+terminal-proxy.log
+
+# xterm files (will be downloaded)
+static/js/xterm.js
+static/js/xterm-addon-fit.js
+static/css/xterm.css
+
+# Marker files
+.free_command_mode
+
+# Runtime files
+nohup.out
+
+# OS specific files
+.DS_Store
+Thumbs.db
